@@ -1,0 +1,15 @@
+##Memory Networks - Weston
+
+En este trabajo se introduce la idea de las _Memory Networks_, dado que la mayoría de los modelos de ML no funcionan bien cuando las tareas a resolver requieren acceder a memoria de largo plazo. La idea es poder escribir y leer de una memoria externa para apoyar las inferencias de este nuevo componente.
+
+En primer lugar llama la atención que el modelo de memoria que utilizan y describen parece ser bastante simple. Presentan varias modificaciones posibles, como la de _olvidar_ en la función de generalización, pero no las aplican y aún así, como comentaré más adelante, obtienen resultados soprendentes. La idea de buscar una memoria que calce con lo buscado también parecee ser bastante simple, solamente buscan cual o cuales (hasta 2) memorias en el componente calzan con la entrada, y se retorna el input, y la o las memorias encontradas.
+
+Al hablar de un componente de memoria, uno de los primeros problemas que se vienen a la cabeza, y que discutimos introductoriamente en la clase anterior, es el hecho de tener que acceder a una base de datos arbitrariamente larga y como esto afectaría tanto al entrenamiento como a los resultados de los modelos, sin embargo muestran en el paper maneras eficientes de abordar este problema con hashing, sin embargo, parece ser que no todo tipo de hashing es adecuado, puesto que se puede perder información o bien la noción de relación entre memorias, lo que se evita con _cluster hashing_.
+
+Otra de las dificultades mencionadas en el problema de _summarization_ de la sesión anterior, era la incapacidad de funcionar correctamente con palabras no vistas, y como el humano es capaz de, aún sin haber visto ciertas palabras, inferir si se trata de un nombre, un lugar, etc. Esto se maneja de forma bastante interesante en este trabajo dado que el modelo propone almacenar por cada palabra, una _bag of words_ para las palabras con las que ha co-ocurrido, tanto seguida a la derecha como seguida a la izquierda. Esto robustece el modelo y da luces de que está intentando modelar el comportamiento de la lectura humana, infiriendo por contexto el significado de palabras no vistas anteriormente.
+
+Finalmente se explora la arista de mezclar preguntas sobre el texto y otras sobre conocimiento general, y se evidencia que trabajo queda por hacer en lo que respecta a responder esas últimas preguntas, sin embargo, se evidencia también, que el avance es significativo ya que es capaz de responder a cosas que no ha visto hasta el momento sin problema alguno y con resultados aceptables.
+
+Sobre los resultados, es destacable el aumento notorio entre redes tradicionales y las MemNN con _k=2_. Esto muestra que el problema detectado es bien abordado por estos sistemas, esto es que las redes tradicionales no se desempeñan adecuadamente con memoria a más largo plazo, y que al incorporarla adecuadamente se mejora substancialmente en tareas de mayor difucultad. Por otro lado se evidencia que el método de _cluster hash_ ayuda notablemente a reducir los tiempos, sin comprometer significativamente los resultados.
+
+Raimundo Herrera Sufán
