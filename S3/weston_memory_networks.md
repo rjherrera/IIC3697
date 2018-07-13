@@ -1,4 +1,4 @@
-##Memory Networks - Weston
+## Memory Networks - Weston
 
 En este trabajo se introduce la idea de las _Memory Networks_, dado que la mayoría de los modelos de ML no funcionan bien cuando las tareas a resolver requieren acceder a memoria de largo plazo. La idea es poder escribir y leer de una memoria externa para apoyar las inferencias de este nuevo componente.
 

@@ -1,4 +1,4 @@
-##One-shot Learning - Santoro
+## One-shot Learning - Santoro
 
 En primer lugar es interesante el _approach_ de **one-shot**. Se menciona que una de las limitaciones de los modelos tradicionales de deep learning es que si bien tienen resultados notables, requieren entrenamientos extensivos y muy adaptados al dominio de los problemas, de modo que al enfrentarse a dominios similares pero no del todo, se debe realizar un nuevo entrenamiento para adaptar el modelo al problema. En _one-shot learning_ la idea es, con poco entrenamiento poder ser flexible a los cambios del dominio, imitando una característica atribuida a los humanos, la de poder realizar aprendizajes y nuevas inferencias con poca información nueva.
 

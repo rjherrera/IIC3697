@@ -1,4 +1,4 @@
-##Summarization Abstractive
+## Summarization Abstractive
 
 En primer lugar me parece destacable el concepto de resumen _abstracto_ por sobre el de resumen _extractivo_, donde el último corresponde a resumir copiando partes del texto, en cuanto el primero corresponde a generar nuevas frases utilizando conceptos no necesariamente utilizados en el texto. Desde un principio parece ser más desafiante que el extractivo, ya que para resumir abstractamente se necesita un conocimiento más acabado del contexto y significado de las palabras, mientras que extractivamente bastaría (sin desmerecer la labor, solo como primera impresión) con seleccionar las frases clave.
 

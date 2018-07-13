@@ -1,4 +1,4 @@
-##VQA 2
+## VQA 2
 
 En primer lugar me parece muy interesante como parte el paper, que es abordando los distintos sesgos que vienen con el lenguaje y con la forma de confeccionar las preguntas.
 

@@ -1,4 +1,4 @@
-##Summarization GetToThePoint
+## Summarization GetToThePoint
 
 En este paper, al igual que en el otro leído, se menciona bastante los esfuerzos por evitar la repetición de pasajes, y el nuevo desafio que se presenta de no solo seleccionar pasajes relevantes de los textos, sino que hacer _abstracción_ de los mismos y generar frases adecuadas.
 

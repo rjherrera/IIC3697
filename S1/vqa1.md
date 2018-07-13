@@ -1,12 +1,12 @@
-##VQA 1
+## VQA 1
 
 Me parece un muy buen paper porque da luces sobre los desafíos de VQA y cuales son las formas en las que:
 
 1. Recolectaron imágenes.
 2. Hacer el desafío interesante para gente que quiere hacer sistemas de reconocimiento no triviales.
-3. Diferenciar entre los distintos usos de VQA. 
+3. Diferenciar entre los distintos usos de VQA.
 
-Una de las partes más interesantes a mi juicio es la parte en que se distingue entre lo que son preguntas que requieren _common-sense_ y lo que son preguntas de baja complejidad. Mi primera impresión fue que se sería muy arbitrario para esa distinción, pero en el fondo la distinción es fundamental. 
+Una de las partes más interesantes a mi juicio es la parte en que se distingue entre lo que son preguntas que requieren _common-sense_ y lo que son preguntas de baja complejidad. Mi primera impresión fue que se sería muy arbitrario para esa distinción, pero en el fondo la distinción es fundamental.
 
 Las imagenes tienen características intrínsecas en ellas que son "fácilmente" detectables con un sistema de bajo nivel, como son el color predominante, o la cantidad de objetos de un tipo. De todas formas me parecieron actividades no triviales pero para los autores, pareciera ser que las asumen como actividades de alguna u otra manera, resueltas.
 
